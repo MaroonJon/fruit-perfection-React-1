@@ -2,6 +2,9 @@ import './App.css'
 import {ReactComponent as ShoppingCart} from "/src/assets/winkelmandje.svg"
 
 function App() {
+    function logClick() {
+        console.log('You clicked!');
+      }
     return (<>
             <nav>
                 <ul>
@@ -19,7 +22,7 @@ function App() {
             </nav>
             <header>
                 <h1>Fruit perfection</h1>
-                <button type="button" onClick={() => console.log("Jij wil shoppen!")}>
+                <button type="button" onClick={(logClick) }>
                     Shop nu
                 </button>
             </header>
